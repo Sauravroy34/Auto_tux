@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import pydirectinput as pd 
 
-import pyautogui as pg
+#import pyautogui as pg
 face_mesh = mp.solutions.face_mesh.FaceMesh(max_num_faces=1)
 
 frame_width = 640
@@ -38,13 +38,14 @@ while True:
         if z <-7:
             
             pd.press("up")
+            print(z)
         if x > 300:
             pd.press("right")
+            
           
         elif x < 200:
             
             pd.press("left")
-            pg.press("left")
  
 
   
